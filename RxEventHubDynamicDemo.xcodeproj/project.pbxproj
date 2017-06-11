@@ -12,6 +12,7 @@
 		24A5BD251ED3FC6600B82B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A5BD231ED3FC6600B82B2F /* Main.storyboard */; };
 		24A5BD271ED3FC6600B82B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5BD261ED3FC6600B82B2F /* Assets.xcassets */; };
 		24A5BD2A1ED3FC6600B82B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A5BD281ED3FC6600B82B2F /* LaunchScreen.storyboard */; };
+		C3BF65B79DF38F6DBC705D24 /* Pods_RxEventHubDynamicDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD4A75C1A2DA860B6A8DE71 /* Pods_RxEventHubDynamicDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		24A5BD261ED3FC6600B82B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24A5BD291ED3FC6600B82B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24A5BD2B1ED3FC6600B82B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD4A75C1A2DA860B6A8DE71 /* Pods_RxEventHubDynamicDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEventHubDynamicDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5BB4584A1B6EE92B125ACE /* Pods-RxEventHubDynamicDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEventHubDynamicDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxEventHubDynamicDemo/Pods-RxEventHubDynamicDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EF73E6FEBCD1476A3E2FF1DB /* Pods-RxEventHubDynamicDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxEventHubDynamicDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxEventHubDynamicDemo/Pods-RxEventHubDynamicDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BF65B79DF38F6DBC705D24 /* Pods_RxEventHubDynamicDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				24A5BD1E1ED3FC6500B82B2F /* RxEventHubDynamicDemo */,
 				24A5BD1D1ED3FC6500B82B2F /* Products */,
+				F6DB0356FF08314B97862A91 /* Pods */,
+				644C6FF95927742DBB09D1F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = RxEventHubDynamicDemo;
 			sourceTree = "<group>";
 		};
+		644C6FF95927742DBB09D1F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDD4A75C1A2DA860B6A8DE71 /* Pods_RxEventHubDynamicDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6DB0356FF08314B97862A91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA5BB4584A1B6EE92B125ACE /* Pods-RxEventHubDynamicDemo.debug.xcconfig */,
+				EF73E6FEBCD1476A3E2FF1DB /* Pods-RxEventHubDynamicDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24A5BD2E1ED3FC6600B82B2F /* Build configuration list for PBXNativeTarget "RxEventHubDynamicDemo" */;
 			buildPhases = (
+				F77E4AE43C8F49F211D12D3D /* [CP] Check Pods Manifest.lock */,
 				24A5BD181ED3FC6500B82B2F /* Sources */,
 				24A5BD191ED3FC6500B82B2F /* Frameworks */,
 				24A5BD1A1ED3FC6500B82B2F /* Resources */,
+				F672CF1DB9EF7734F496093D /* [CP] Embed Pods Frameworks */,
+				387F8D7DD8CF327CADBCA919 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		387F8D7DD8CF327CADBCA919 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxEventHubDynamicDemo/Pods-RxEventHubDynamicDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F672CF1DB9EF7734F496093D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxEventHubDynamicDemo/Pods-RxEventHubDynamicDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77E4AE43C8F49F211D12D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24A5BD181ED3FC6500B82B2F /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		24A5BD2F1ED3FC6600B82B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5BB4584A1B6EE92B125ACE /* Pods-RxEventHubDynamicDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P2KQ62R5X2;
@@ -264,12 +340,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.zzdjk6.RxEventHubDynamicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		24A5BD301ED3FC6600B82B2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF73E6FEBCD1476A3E2FF1DB /* Pods-RxEventHubDynamicDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P2KQ62R5X2;
@@ -277,7 +354,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.zzdjk6.RxEventHubDynamicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -300,6 +377,7 @@
 				24A5BD301ED3FC6600B82B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

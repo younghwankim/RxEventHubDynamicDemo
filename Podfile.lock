@@ -1,0 +1,15 @@
+PODS:
+  - RxEventHub (0.1.1):
+    - RxSwift (~> 2.5)
+  - RxSwift (2.6.1)
+
+DEPENDENCIES:
+  - RxEventHub
+
+SPEC CHECKSUMS:
+  RxEventHub: 1b6e08c52000483e9c63460ea64b87743885fc62
+  RxSwift: 0147fbf94e65c6085da9540de92848189ac1c3f6
+
+PODFILE CHECKSUM: 7b8b5f951f69fb8e298d8ab816790f637b7c7b14
+
+COCOAPODS: 1.2.0
